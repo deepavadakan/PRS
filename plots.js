@@ -4,7 +4,7 @@ var data = [{
   type: "sunburst",
   labels: ["Total<br>Calls", "Non-covid<br>Calls", "Covid<br>Suspect", "Covid<br>Positive", "Covid<br>Negative", "Unknown<br>Not tested"],
   parents: ["", "Total<br>Calls", "Total<br>Calls", "Covid<br>Suspect", "Covid<br>Suspect", "Covid<br>Suspect"],
-  values:  [1111, 782, 329, 85, 153, 78],
+  values:  [1472, 1144, 328, 88, 153, 78],
   outsidetextfont: {size: 20, color: "#377eb8"},
   leaf: {opacity: 0.4},
   marker: {line: {width: 2}},
@@ -21,8 +21,8 @@ Plotly.newPlot('pie-plot', data, layout);
 
 
 var trace1 = {
-  x: ['Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-  y: [109, 101, 114, 87, 94, 104, 98, 110, 99, 113],
+  x: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+  y: [167, 148, 143, 114, 117, 100, 99, 122, 111, 118, 108, 125],
   type: 'bar',
   name: 'Total Calls',
   marker: {
@@ -32,8 +32,8 @@ var trace1 = {
 };
 
 var trace2 = {
-  x: ['Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-  y: [41, 42, 59, 28, 29, 21, 26, 19, 21, 29],
+  x: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+  y: [0, 0, 35, 43, 64, 34, 29, 23, 28, 23, 19, 30],
   type: 'bar',
   name: 'Covid Suspect',
   marker: {
@@ -43,8 +43,8 @@ var trace2 = {
 };
 
 var trace3 = {
-  x: ['Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-  y: [27, 18, 15, 3, 3, 1, 0, 1, 10, 7],
+  x: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+  y: [0, 0, 22, 21, 16, 4, 3, 0, 1, 1, 9, 11],
   type: 'bar',
   name: 'Covid Positive',
   marker: {
