@@ -1,8 +1,8 @@
 // Pie Chart variables for font and colors
 var pieFont = 'Helvetica, sans-serif';
 var pieCovidColor = "#012076";
-var pieNonCovidColor = "#ef553b";
-var pieLeafColor = "#00cc96";
+var pieNonCovidColor = "green";
+var pieTextColor = "#377eb8";
 
 var data1 = [{
   type: "sunburst",
@@ -15,7 +15,7 @@ var data1 = [{
   },
   outsidetextfont: {
     size: 20, 
-    color: "#377eb8",
+    color: pieTextColor,
     family: pieFont
   },
   //leaf: {opacity: 0.4},
@@ -24,7 +24,7 @@ var data1 = [{
 
 var layout1 = {
   margin: {l: 0, r: 0, b: 0, t: 0},
-  sunburstcolorway:[pieCovidColor, pieNonCovidColor, pieLeafColor],
+  sunburstcolorway:[pieNonCovidColor, pieCovidColor],
   width: 500,
   height: 500
 };
