@@ -156,6 +156,7 @@ var layout3 = {
   barmode: 'stack',
   xaxis: {
     tickangle: -45,
+    automargin: true,
     title: {
       text: "Type of Calls",
       font: barFont,
