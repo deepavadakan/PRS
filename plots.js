@@ -332,9 +332,14 @@ traceDec = {
 var layout4 = {
   width: 1400,
   height: 500,
+  title: {
+    text: 'PRS Calls from 2008 - 2020',
+    font: barFont,
+    size: 16
+  },
   barmode: 'stack',
   xaxis: {
-    dtick: 1
+    dtick: 1,
   },
   yaxis: {
     title: {
