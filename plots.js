@@ -102,100 +102,100 @@ var layout2 = {
 Plotly.newPlot('bar-plot', data2, layout2);
 
 // Stacked Bar Chart variables for font and colors
-var sBarFont = 'Helvetica, sans-serif';
-var sBar2015 = 'rgb(49,130,189)';
-var sBar2016 = 'rgb(204,204,204)';
-var sBar2017 = 'red';
-var sBar2018 = 'orange';
-var sBar2019 = 'green';
-var sBar2020 = 'purple';
-var xValues = ["Sick Person/ Unknown problems" ,"Fall Victim" ,"Breathing/ Respiratory Issues" ,"Motor Vehicle Accident" ,"Cardiac" ,"Medical Alarm" ,"Abdominal Pain" ,"Fainting" ,"Altered Mental Status" ,"Psychiatric Problems" ,"Stand By (Fire, Police, EMS)" ,"Trauma" ,"Diabetic Emergency" ,"Seizures" ,"Intoxicated (ETOH)" ,"Blood Pressure Problems" ,"Hemorrhage/Laceration" ,"Back Pain" ,"Overdose (Opiod/Alchohol)" ,"Assist EMS" ,"Stroke/CVA" ,"Assault" ,"Flu-Like Symptoms" ,"Allergies" ,"Choking" ,"Headache" ,"Transport/Transfer" ,"Convulsions / Seizure" ,"Suicide (Attempt)" ,"Patient Assist" ,"Burns" ,"CO Alarm" ,"Animal Bite" ,"Heat/Cold Exposure" ,"Maternity" ,"Eye Problem" ,"Ingestion/Poisoning" ,"Stab/Gunshot Wound" ,"Industrial Accident"];
+// var sBarFont = 'Helvetica, sans-serif';
+// var sBar2015 = 'rgb(49,130,189)';
+// var sBar2016 = 'rgb(204,204,204)';
+// var sBar2017 = 'red';
+// var sBar2018 = 'orange';
+// var sBar2019 = 'green';
+// var sBar2020 = 'purple';
+// var xValues = ["Sick Person/ Unknown problems" ,"Fall Victim" ,"Breathing/ Respiratory Issues" ,"Motor Vehicle Accident" ,"Cardiac" ,"Medical Alarm" ,"Abdominal Pain" ,"Fainting" ,"Altered Mental Status" ,"Psychiatric Problems" ,"Stand By (Fire, Police, EMS)" ,"Trauma" ,"Diabetic Emergency" ,"Seizures" ,"Intoxicated (ETOH)" ,"Blood Pressure Problems" ,"Hemorrhage/Laceration" ,"Back Pain" ,"Overdose (Opiod/Alchohol)" ,"Assist EMS" ,"Stroke/CVA" ,"Assault" ,"Flu-Like Symptoms" ,"Allergies" ,"Choking" ,"Headache" ,"Transport/Transfer" ,"Convulsions / Seizure" ,"Suicide (Attempt)" ,"Patient Assist" ,"Burns" ,"CO Alarm" ,"Animal Bite" ,"Heat/Cold Exposure" ,"Maternity" ,"Eye Problem" ,"Ingestion/Poisoning" ,"Stab/Gunshot Wound" ,"Industrial Accident"];
 
-trace31 = {
-  type: 'bar',
-  x: xValues,
-  y: [126,105,81,86,68,44,45,43,30,27,23,30,22,16,13,15,18,14,9,12,13,7,1,1,4,5,1,2,2,4,0,2,2,2,1,1,0,0,0],
-  name: '2015',
-  marker: {
-    color: sBar2015
-  }
-};
+// trace31 = {
+//   type: 'bar',
+//   x: xValues,
+//   y: [126,105,81,86,68,44,45,43,30,27,23,30,22,16,13,15,18,14,9,12,13,7,1,1,4,5,1,2,2,4,0,2,2,2,1,1,0,0,0],
+//   name: '2015',
+//   marker: {
+//     color: sBar2015
+//   }
+// };
 
-trace32 = {
-  type: 'bar',
-  x: xValues,
-  y: [97,99,76,105,60,63,29,43,21,28,27,18,19,12,12,16,15,14,5,22,7,9,6,8,5,2,1,4,2,1,1,1,1,2,1,1,1,0,1],
-  name: '2016',
-  marker: {
-    color: sBar2016
-  }
-};
+// trace32 = {
+//   type: 'bar',
+//   x: xValues,
+//   y: [97,99,76,105,60,63,29,43,21,28,27,18,19,12,12,16,15,14,5,22,7,9,6,8,5,2,1,4,2,1,1,1,1,2,1,1,1,0,1],
+//   name: '2016',
+//   marker: {
+//     color: sBar2016
+//   }
+// };
 
-trace33 = {
-  type: 'bar',
-  x: xValues,
-  y: [134,115,103,97,80,52,51,27,27,22,32,25,28,22,24,15,15,17,17,13,9,4,6,5,3,5,2,2,1,0,1,3,2,1,1,0,0,0,0],
-  name: '2017',
-  marker: {
-    color: sBar2017
-  }
-};
+// trace33 = {
+//   type: 'bar',
+//   x: xValues,
+//   y: [134,115,103,97,80,52,51,27,27,22,32,25,28,22,24,15,15,17,17,13,9,4,6,5,3,5,2,2,1,0,1,3,2,1,1,0,0,0,0],
+//   name: '2017',
+//   marker: {
+//     color: sBar2017
+//   }
+// };
 
-trace34 = {
-  type: 'bar',
-  x: xValues,
-  y: [143,140,79,98,69,75,31,31,33,33,20,36,16,22,17,20,8,11,15,9,13,4,5,8,5,3,4,4,1,3,6,0,2,0,0,2,2,0,0],
-  name: '2018',
-  marker: {
-    color: sBar2018
-  }
-};
+// trace34 = {
+//   type: 'bar',
+//   x: xValues,
+//   y: [143,140,79,98,69,75,31,31,33,33,20,36,16,22,17,20,8,11,15,9,13,4,5,8,5,3,4,4,1,3,6,0,2,0,0,2,2,0,0],
+//   name: '2018',
+//   marker: {
+//     color: sBar2018
+//   }
+// };
 
-trace35 = {
-  type: 'bar',
-  x: xValues,
-  y: [170,139,82,70,71,45,35,31,46,26,28,20,17,21,27,15,17,15,15,3,6,8,5,6,,3,1,2,3,0,2,2,1,1,3,1,1,0,0],
-  name: '2019',
-  marker: {
-    color: sBar2019
-  }
-};
+// trace35 = {
+//   type: 'bar',
+//   x: xValues,
+//   y: [170,139,82,70,71,45,35,31,46,26,28,20,17,21,27,15,17,15,15,3,6,8,5,6,,3,1,2,3,0,2,2,1,1,3,1,1,0,0],
+//   name: '2019',
+//   marker: {
+//     color: sBar2019
+//   }
+// };
 
-trace36 = {
-  type: 'bar',
-  x: xValues,
-  y: [174,104,88,38,45,33,43,22,38,30,30,21,21,17,14,13,13,10,15,4,10,14,16,9,6,5,8,1,5,3,0,2,0,1,1,1,0,2,0],
-  name: '2020',
-  marker: {
-    color: sBar2020
-  }
-};
+// trace36 = {
+//   type: 'bar',
+//   x: xValues,
+//   y: [174,104,88,38,45,33,43,22,38,30,30,21,21,17,14,13,13,10,15,4,10,14,16,9,6,5,8,1,5,3,0,2,0,1,1,1,0,2,0],
+//   name: '2020',
+//   marker: {
+//     color: sBar2020
+//   }
+// };
 
-var layout3 = {
-  width: 1400,
-  height: 500,
-  barmode: 'stack',
-  xaxis: {
-    tickangle: -45,
-    automargin: true,
-    title: {
-      text: "Type of Calls",
-      font: sBarFont,
-      size: 16
-    }
-  },
-  yaxis: {
-    title: {
-      text: "Number of Calls",
-      font: sBarFont,
-      size: 16
-    }
-  },
-};
+// var layout3 = {
+//   width: 1400,
+//   height: 500,
+//   barmode: 'stack',
+//   xaxis: {
+//     tickangle: -45,
+//     automargin: true,
+//     title: {
+//       text: "Type of Calls",
+//       font: sBarFont,
+//       size: 16
+//     }
+//   },
+//   yaxis: {
+//     title: {
+//       text: "Number of Calls",
+//       font: sBarFont,
+//       size: 16
+//     }
+//   },
+// };
 
-var data3 = [trace31, trace32, trace33, trace34, trace35, trace36];
+// var data3 = [trace31, trace32, trace33, trace34, trace35, trace36];
 
-Plotly.newPlot('sBar-plot', data3, layout3);
+// Plotly.newPlot('sBar-plot', data3, layout3);
 
 // Stacked Bar Chart variables for font and colors
 var sBarFont = 'garamond';
