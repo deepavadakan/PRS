@@ -1,14 +1,14 @@
 // Pie Chart variables for font and colors
-var pieFont = 'Helvetica, sans-serif';
-var pieCovidColor = "#012076";
-var pieNonCovidColor = "green";
-var pieTextColor = "#377eb8";
+var pieFont = 'garamond';
+var pieCovidColor = "red";
+var pieNonCovidColor = "0f3057";
+var pieTextColor = "black";
 
 var data1 = [{
   type: "sunburst",
-  labels: ["Total<br>Calls", "Non-Covid<br>Calls", "Covid<br>Suspect", "Covid<br>Positive", "Covid<br>Negative", "Unknown<br>Not Tested"],
+  labels: ["Total<br>Calls", "Covid<br>Suspect", "Non-Covid<br>Calls", "Covid<br>Positive", "Covid<br>Negative", "Unknown<br>Not Tested"],
   parents: ["", "Total<br>Calls", "Total<br>Calls", "Covid<br>Suspect", "Covid<br>Suspect", "Covid<br>Suspect"],
-  values:  [1472, 1144, 328, 88, 153, 78],
+  values:  [1472, 328, 1144, 88, 153, 78],
   textfont: {
     family: pieFont,
     size: 15
@@ -32,9 +32,9 @@ var layout1 = {
 Plotly.newPlot('pie-plot', data1, layout1);
 
 // Bar Chart variables for font and colors
-var barFont = 'Helvetica, sans-serif';
-var barCallsColor = 'rgb(49,130,189)';
-var barCovidSColor = 'rgb(204,204,204)';
+var barFont = 'garamond';
+var barCallsColor = 'rgb(18, 57, 121)';
+var barCovidSColor = '#ee9595';
 var barCovidPColor = 'red';
 
 var trace21 = {
@@ -43,8 +43,7 @@ var trace21 = {
   type: 'bar',
   name: 'Total Calls',
   marker: {
-    color: barCallsColor,
-    opacity: 0.7,
+    color: barCallsColor
   }
 };
 
@@ -54,8 +53,7 @@ var trace22 = {
   type: 'bar',
   name: 'Covid Suspect',
   marker: {
-    color: barCovidSColor,
-    opacity: 0.7,
+    color: barCovidSColor
   }
 };
 
@@ -65,8 +63,7 @@ var trace23 = {
   type: 'bar',
   name: 'Covid Positive',
   marker: {
-    color: barCovidPColor,
-    opacity: 0.7,
+    color: barCovidPColor
   }
 };
 
@@ -75,21 +72,27 @@ var data2 = [trace21, trace22, trace23];
 var layout2 = {
   title: {
     text: '2020 Calls',
-    font: barFont,
+    font:{
+      family: barFont
+    },
     size: 16
   },
   xaxis: {
     tickangle: -45,
     title: {
       text: "2020",
-      font: barFont,
+      font:{
+        family: barFont
+      },
       size: 16
     }
   },
   yaxis: {
     title: {
       text: "Number of Calls",
-      font: barFont,
+      font:{
+        family: barFont
+      },
       size: 16
     }
   },
@@ -194,19 +197,129 @@ var data3 = [trace31, trace32, trace33, trace34, trace35, trace36];
 
 Plotly.newPlot('sBar-plot', data3, layout3);
 
+// Stacked Bar Chart variables for font and colors
+var sBarFont = 'garamond';
+var sBar2015 = 'rgb(0, 7, 45)';
+var sBar2016 = 'rgb(3,4,175)';
+var sBar2017 = 'rgb(0,119,182)';
+var sBar2018 = 'rgb(0, 180, 216)';
+var sBar2019 = 'rgb(144, 224, 239)';
+var sBar2020 = 'rgb(202, 240, 248)';
+var xValues = ['Other', 'Fall' ,'Respiratory' ,'Cardiac' ,'Motor Vehicle Accident' ,'Neurological' ,'Sick Person' ,'Medical Emergency' ,'Trauma' ,'Abdominal Pain' ,'Uncounscious/Syncope' ,'Overdose' ,'Psychiatric Problems' ,'Diabetic Emergency' ,'Other Medical' ,'Assault' ,'Flu-Like Symptoms' ,'Allergies' ,'Suicide (Attempt)' ,'Burns' ,'Animal Bite' ,'Pregnancy / Childbirth' ,'Heat/Cold Exposure' ,'Stab/Gunshot Wound'];
+
+trace31 = {
+  type: 'bar',
+  x: xValues,
+  y: [109,105,85,83,82,61,59,44,48,45,43,22,27,22,20,7,1,1,2,,2,1,2,0],
+  name: '2015',
+  marker: {
+    color: sBar2015
+  }
+};
+
+trace32 = {
+  type: 'bar',
+  x: xValues,
+  y: [103,99,81,76,99,44,46,63,34,29,43,18,28,19,17,9,6,8,2,1,1,1,2,0],
+  name: '2016',
+  marker: {
+    color: sBar2016
+  }
+};
+
+trace33 = {
+  type: 'bar',
+  x: xValues,
+  y: [121,115,106,95,90,60,63,52,40,51,27,41,22,28,22,4,6,5,1,1,2,1,1,0],
+  name: '2017',
+  marker: {
+    color: sBar2017
+  }
+};
+
+trace34 = {
+  type: 'bar',
+  x: xValues,
+  y: [117,140,84,89,95,72,62,75,44,31,31,34,33,16,16,4,5,8,1,6,2,0,0],
+  name: '2018',
+  marker: {
+    color: sBar2018
+  }
+};
+
+trace35 = {
+  type: 'bar',
+  x: xValues,
+  y: [137,139,82,86,68,75,67,45,37,35,31,43,26,17,19,8,5,6,3,2,1,3,1,0],
+  name: '2019',
+  marker: {
+    color: sBar2019
+  }
+};
+
+trace36 = {
+  type: 'bar',
+  x: xValues,
+  y: [152,104,94,58,35,66,69,33,34,43,22,29,30,21,16,14,16,9,5,0,0,1,1,2],
+  name: '2020',
+  marker: {
+    color: sBar2020
+  }
+};
+
+var layout3 = {
+  width: 1400,
+  height: 500,
+  barmode: 'stack',
+  xaxis: {
+    tickangle: -45,
+    automargin: true,
+    tickfont:{
+      family: sBarFont,
+      color: "black"
+    },
+    title: {
+      text: "Type of Calls",
+      font:{
+        family: sBarFont,
+        color: "black"
+      },
+      size: 16
+    }
+  },
+  yaxis: {
+    tickfont:{
+      family: sBarFont,
+      color: "black"
+    },
+    title: {
+      text: "Number of Calls",
+      font:{
+        family: sBarFont,
+        color: "black"
+      },
+      size: 16
+    }
+  },
+};
+
+var data3 = [trace31, trace32, trace33, trace34, trace35, trace36];
+
+Plotly.newPlot('sBarAlt-plot', data3, layout3);
+
 // Stacked Bar2 Chart variables for font and colors
-var sBarJan = 'rgb(49,130,189)';
-var sBarFeb = 'rgb(204,204,204)';
-var sBarMar = 'red';
-var sBarApr = 'orange';
-var sBarMay = 'green';
-var sBarJun = 'blue';
-var sBarJul = 'pink';
-var sBarAug = 'yellow';
-var sBarSep = 'brown';
-var sBarOct = 'black';
-var sBarNov = 'gray';
-var sBarDec = 'indigo';
+var sBarJan = '#0c283a';
+var sBarFeb = '#133c58';
+var sBarMar = '#195075';
+var sBarApr = '#1f6492';
+var sBarMay = '#2678b0';
+var sBarJun = '#2c8dcd';
+var sBarJul = '#469dd7';
+var sBarAug = '#63acdd';
+var sBarSep = '#81bce3';
+var sBarOct = '#9ecbea';
+var sBarNov = 'rgb(144, 224, 239)';
+var sBarDec = 'rgb(202, 240, 248)';
 var xBar2Values = ['2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020'];
 
 traceJan = {
@@ -334,17 +447,31 @@ var layout4 = {
   height: 500,
   title: {
     text: 'PRS Calls from 2008 - 2020',
-    font: barFont,
+    font:{
+      family: sBarFont,
+      color: "black"
+    },
     size: 16
   },
   barmode: 'stack',
   xaxis: {
+    tickfont:{
+      family: sBarFont,
+      color: "black"
+    },
     dtick: 1,
   },
   yaxis: {
+    tickfont:{
+      family: sBarFont,
+      color: "black"
+    },
     title: {
       text: "Number of Calls",
-      font: sBarFont,
+      font:{
+        family: sBarFont,
+        color: "black"
+      },
       size: 16
     }
   },
